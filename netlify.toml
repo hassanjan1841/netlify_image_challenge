@@ -4,11 +4,31 @@
   functions = "netlify/functions"
   publish = ""
 
+
+# [[headers]]
+#   for = "/source-images/*"
+#   [headers.values]
+#     Cache-Control = "public, max-age=604800, must-revalidate"
+
 [[headers]]
-  for = "/source-images/*"
+  for = "*.jpg"
   [headers.values]
     Cache-Control = "public, max-age=604800, must-revalidate"
 
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, must-revalidate"
+
+[[headers]]
+  for = "*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, must-revalidate"
+
+# [[headers]]
+#   for = "*.png"
+#   [headers.values]
+#     Cache-Control = "public, max-age=300"
 
 ## Uncomment to use this redirect for Single Page Applications like create-react-app.
 ## Not needed for static site generators.
