@@ -11,5 +11,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@netlify/blobs": "^7.3.0",
+    "@netlify/edge-functions": "^2.6.1",
+    "@netlify/functions": "^2.6.3"
+  }
 }

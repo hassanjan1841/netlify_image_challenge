@@ -1,0 +1,39 @@
+.image-container {
+    width: 500px;
+    height: 300px;
+    overflow: scroll;
+    border: 1px solid black;
+}
+.error-modal-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+}
+.error-modal {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #ec4c4c;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.close-btn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: black;
+    font-size: 1.5rem;
+}

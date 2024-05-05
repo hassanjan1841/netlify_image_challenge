@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Gallery | Netlify Image Challenge</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1>Netlify</h1>
-
-    <img src=".netlify/images?url=light.jpg&w=500&fm=webp" alt="">
-
-</body>
+    <button>get function data</button>
+    <p>function data here</p>
+    <p class="image-link">hello link is here</p>
+    <div class="image-controls">
+      <div class="width-control">
+        <label for="width">Width:</label>
+        <br />
+        <input type="text" name="width" id="width" />
+      </div>
+      <div class="height-control">
+        <label for="height">Height:</label>
+        <br />
+        <input type="text" name="height" id="height" />
+      </div>
+      <div class="format-control">
+        <label for="format">Format:</label>
+        <br />
+        <select name="format" id="format">
+          <option value="webp">WEBP</option>
+          <option value="png">png</option>
+          <option value="jpg">jpg</option>
+          <option value="avif">avif</option>
+        </select>
+      </div>
+      <br />
+      <div class="change-btn-container">
+        <button class="change-btn">Change</button>
+      </div>
+    </div>
+    <br />
+    <div class="image-container">
+      <img
+        src=".netlify/images?url=light.jpg&w=500&fm=webp"
+        alt="light bulb image"
+        class="image"
+      />
+    </div>
+    <div class="error-modal-container">
+      <div class="error-modal">
+        <p></p>
+        <span class="close-btn">&times;</span>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
