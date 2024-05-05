@@ -31,6 +31,7 @@ function changeImage(widthInput, heightInput, format) {
 
 const errorContainer = document.querySelector(".error-modal-container");
 const errorModal = document.querySelector(".error-modal p");
+const modalCloseBtn = document.querySelector(".error-modal .close-btn");
 
 changeBtn.addEventListener("click", () => {
   if (!isNaN(widthInput.value) && !isNaN(heightInput.value)) {
@@ -44,4 +45,7 @@ changeBtn.addEventListener("click", () => {
   if (image) {
     imageLink.innerHTML = image.src;
   }
+});
+modalCloseBtn.addEventListener("click", () => {
+  errorContainer.style.display = "none";
 });
